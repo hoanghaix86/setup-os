@@ -13,3 +13,9 @@ rm vagrant_2.4.1_linux_amd64.zip
 sudo mv vagrant /usr/local/bin/vagrant
 
 sudo chown $USER.$USER /usr/local/bin/vagrant
+
+sudo su -
+mkdir /etc/vbox/
+cd /etc/vbox/
+echo '* 0.0.0.0/0 ::/0' > /etc/vbox/networks.conf
+chmod 644 /etc/vbox/networks.conf
