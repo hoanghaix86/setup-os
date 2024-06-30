@@ -10,7 +10,7 @@ FILE_NAME=$(jq -n -r --arg str $LINK_DOWNLOAD '$str | split("/") | .[-1]')
 
 curl -s -L -O $LINK_DOWNLOAD
 
-tar -xf $FILE_NAME
+tar -zxvf $FILE_NAME
 
 rm $FILE_NAME
 
