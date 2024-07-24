@@ -2,7 +2,7 @@
 
 sudo apt-get update
 
-sudo apt-get install -y curl 
+sudo apt-get install -y curl bzip2
 
 url="https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
 
