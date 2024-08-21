@@ -14,14 +14,7 @@ rm firefox-x-x-x.tar.bz2
 
 sudo mv firefox /opt
 
-desktop_file=~/.local/share/applications/firefox-developer-edition.desktop
-
-if [ -f "$desktop_file" ]
-then
-    rm $desktop_file
-fi
-
-cat > $desktop_file << EOF
+cat << EOF | sudo tee /usr/share/applications/firefox-developer-edition.desktop
 [Desktop Entry]
 Name=Firefox Developer
 GenericName=Firefox Developer Edition
